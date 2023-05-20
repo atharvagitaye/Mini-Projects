@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Yogapoint</title>
+        <style>
+             table{
+                width: 100%;
+            }    
+        </style>
+        <script>
+            function conf()
+            {
+                alert("Your request has been reached to our office, our executive will call you.")
+            }
+        </script>
+    </head>
+    <body style="background-image: url('images/yoga_background.png');">
+        <div style="background-color: aquamarine;">
+            <center>
+                <a href="yogapoint.html"><img src="images/yogapoint_logo.png" alt="Yogapoint Logo" height="100px" width="150px"></a>
+            </center>
+            <table>
+                <tr>
+                    <td>
+                        <p style="text-align: center; font-size:30px;"><a style="text-decoration: none;" href="yogapoint.html">Home</a></p>
+                    </td>
+                    <td>
+                        <p style="text-align: center; font-size:30px;"><a style="text-decoration: none;" href="tutorials.html">Tutorials</a></p>
+                    </td>
+                    <td>
+                        <p style="text-align: center; font-size:30px;"><a style="text-decoration: none;" href="aboutus.html">About Us</a></p>
+                    </td>
+                    <td>
+                        <p style="text-align: center; font-size:30px;"><a style="text-decoration: none;" href="contactus.html">Contact Us</a></p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div style="background-color: yellow;">
+            <center>
+                <br>
+            <h1>We will like to help you !!</h1>
+            <p>Fill up the following form our team will contact you in next 24 hours</p>
+            
+            <form name="contactus" method="post" action="thankyou.html">
+                <label for="fname">First name:</label>
+                <input type="text" name="fname" id="fname"><br><br>
+                <label for="mname">Middle name:</label>
+                <input type="mname" name="mname" id="mname"><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" name="lname" id="lname"><br><br>
+                <label for="pfcall">Prefferd call time:</label>
+                <input type="time" name="pfcall" id="pfcall"><br><br>
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age"><br><br>
+                <label for="prof">Profession:</label>
+                <select id="prof" name="prof">
+                    <option value="Businessman">Businessman</option>
+                    <option value="Student">Student</option>
+                    <option value="Employee">Employee</option>
+                </select><br><br>
+                <input type="submit" value="Submit" onclick="conf()">
+            </form>
+            </center>
+            <br>
+        </div>
+    </body>
+</html>
